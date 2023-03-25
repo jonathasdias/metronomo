@@ -1,0 +1,90 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: rgb(34, 31, 31);
+}
+
+.metronomo {
+    padding: 10px;
+    width: 70%;
+    max-width: 70%;
+    min-width: 40rem;
+    background-color: red;
+    text-align: center;
+}
+
+#h1Bpm {
+    text-align: center;
+    font-size: 3.6rem;
+}
+
+.container {
+    border: 2px solid green;
+    display: flex;
+    justify-content: center;
+}
+
+#inputRange {
+    width: 80%;
+}
+
+.btns-control {
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    border-radius: 100%;
+}
+.btns-control:hover {
+    background-color: rgba(0, 0, 0, 0.137);
+}
+
+#btn-playPause {
+    font-size: 40px;
+    width: 100px;
+    height: 100px;
+    margin: 20px 0;
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+@media (max-width: 642px){
+    .metronomo {
+        width: 100%;
+        max-width: none;
+        min-width: unset;
+    }
+
+    #h1Bpm {
+        font-size: 3rem;
+    }    
+
+    .btns-control {
+        width: 100%;
+        border-radius: unset;
+        font-size: 26px;
+    }
+
+    .container {
+        flex-direction: column-reverse;
+    }
+
+    #h1Bpm {
+        margin-bottom: 20px;
+    }
+
+    #inputRange {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    #btn-playPause {
+        width: 80px;
+        height: 80px;
+    }
+}
